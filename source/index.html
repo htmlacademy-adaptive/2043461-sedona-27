@@ -1,12 +1,144 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
-  </body>
+<html class="page" lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body class="page__body">
+<header class="main-header">
+  <a class="main-header__logo">
+    <img class="main-header__logo-image" src="img/header/logotype.svg" width="185" height="96" alt="Городок Седона">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list menu-list">
+        <li class="menu-list__item menu-list__item--current">
+          <a>
+            Главная
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#">
+            HTML ACADEMY
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="main-container">
+  <h1 class="visually-hidden">Sedona</h1>
+  <section class="welcome">
+    <div class="welcome__wrapper">
+      <h2 class="visually-hidden">Приветствие</h2>
+      <img class="welcome__mountains" src="img/body/welcome.svg" width="" height="" alt="Добро пожаловать в Седону">
+    </div>
+  </section>
+  <section class="intro">
+    <div class="intro__wrapper">
+      <header class="intro__header">
+        <h2 class="visually-hidden">Причины посетить Седону</h2>
+        <p class="intro__description">
+          СЕДОНА — небольшой<br>городок в АРИЗОНЕ,<br>заслуживающий большего!
+        </p>
+        <p class="intro__reasons">
+          Рассмотрим 5 причин, по которым<br>Седона круче, чем гранд каньон!
+        </p>
+      </header>
+    </div>
+  </section>
+  <section class="reasons">
+    <div class="reasons__wrapper">
+      <h2 class="visually-hidden">Причины</h2>
+      <ul class="reasons__list">
+        <li class="reasons__item reasons__item--town">
+          <h3 class="reasons__title">Настоящий городок</h3>
+          <p class="reasons__number">-№1-</p>
+          <p class="reasons__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          <img class="reasons__town-image" src="#" width="" height="" alt="Фотография города">
+        </li>
+        <li class="reasons__item reasons__item--house">
+          <h3 class="reasons__title">Жильё</h3>
+          <p class="reasons__description">Рекомендуем пожить в<br> настоящем мотеле, все как<br> в кино!</p>
+        </li>
+        <li class="reasons__item reasons__item--food">
+          <h3 class="reasons__title">Еда</h3>
+          <p class="reasons__description">Всегда заказывайте ФИРМЕННЫЙ<br> БУРГЕР, Вы НЕ разочаруетесь!</p>
+        </li>
+        <li class="reasons__item reasons__item--souvenirs">
+          <h3 class="reasons__title">Сувениры</h3>
+          <p class="reasons__description">Не только китайского, но и<br> местного производства!</p>
+        </li>
+        <li class="reasons__item reasons__item--bridge">
+          <h3 class="reasons__title">ТАМ ЕСТЬ Мост дьявола</h3>
+          <p class="reasons__number">-№2-</p>
+          <p class="reasons__description">Да, по нему можно пройти! Если вы<br> осмелитесь, конечно</p>
+          <img class="reasons__bridge-image" src="#" width="" height="" alt="Фотография моста Дьявола">
+        </li>
+        <li class="reasons__item reasons__item--area">
+          <h3 class="reasons__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+          <p class="reasons__number">-№3-</p>
+          <p class="reasons__description">ВСЕ интересные места находятся<br> очень близко</p>
+        </li>
+        <li class="reasons__item reasons__item--road">
+          <h3 class="reasons__title">КРАСИВАЯ ДОРОГА</h3>
+          <p class="reasons__number">-№4-</p>
+          <p class="reasons__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА<br> совсем НЕ СКУЧНО!</p>
+        </li>
+        <li class="reasons__item reasons__item--tourists">
+          <h3 class="reasons__title">МАЛО ТУРИСТОВ</h3>
+          <p class="reasons__number">-№5-</p>
+          <p class="reasons__description">Большинство едет в гранд каньон<br> и толпится там</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="search">
+    <div class="search__wrapper">
+      <h2 class="search-title">
+        ЗАИНТЕРЕСОВАЛИСЬ?
+      </h2>
+      <p>Укажите предполагаемые даты<br>поездки, и мы покажем вам лучшие<br>предложения гостиниц в седоне</p>
+      <a class="search__hotel button" href="#">Найти Гостиницу</a>
+    </div>
+  </section>
+</main>
+<footer class="main-footer">
+  <div class="main-footer__wrapper">
+    <div class="main-footer__hashtag hashtag">
+      <a class="hashtag__link" href="#">#VISITSEDONA</a>
+    </div>
+    <div class="main-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
