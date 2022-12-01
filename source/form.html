@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
-<body>
+<body class="page__body">
 <header class="header">
   <nav class="nav">
-    <a class="nav__logo">
+    <a class="nav__logo" href="index.html">
       <img class="nav__logo-image" src="img/logotype.svg" width="185" height="96" alt="Городок Седона">
     </a>
     <button class="nav__toggle" type="button">
@@ -16,7 +16,7 @@
     <div class="nav__wrapper">
       <ul class="nav__list menu-list">
         <li class="menu-list__item">
-          <a>Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="menu-list__item">
           <a href="catalog.html">Фото и видео</a>
@@ -38,8 +38,8 @@
       <img src="img/sedona.svg" width="229" height="39" alt="Седона">
     </div>
     <div class="welcome__description">
-      <h1 class="welcome__title">Оставьте свой отзыв</h1>
-      <p class="media__overview">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <h2 class="welcome__title">Оставьте свой отзыв</h2>
+      <p class="welcome__overview">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </div>
   </section>
   <section class="form">
@@ -161,20 +161,25 @@
     </a>
   </div>
 </footer>
-<div class="mistake">
-  <section class="modal__mistake mistake">
-    <h2 class="mistake__title">что-то пошло не так!</h2>
-    <p class="mistake__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="button" type="button">ok</button>
-  </section>
-</div>
-<div class="message">
-  <section class="modal__message message">
-    <h2 class="message__title">Ваш отзыв отправлен!</h2>
-    <p class="message__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
-      опубликуем его на сайте.</p>
-    <button class="button" type="button">закрыть окно</button>
-  </section>
-</div>
+<section class="modal">
+  <div class="modal__container modal__container-error">
+    <div class="modal__wrapper-text">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </div>
+    <div class="modal__wrapper-button">
+      <button class="modal__button button">Оk</button>
+    </div>
+  </div>
+  <div class="modal__container modal__container-success">
+    <div class="modal__wrapper-text">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+    </div>
+    <div class="modal__wrapper-button">
+      <button class="modal__button button">Закрыть окно</button>
+    </div>
+  </div>
+</section>
 </body>
 </html>

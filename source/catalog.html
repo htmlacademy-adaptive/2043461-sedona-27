@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
-<body>
+<body class="page__body">
 <header class="header">
   <nav class="nav">
-    <a class="nav__logo">
+    <a class="nav__logo" href="index.html">
       <img class="nav__logo-image" src="img/logotype.svg" width="185" height="96" alt="Городок Седона">
     </a>
     <button class="nav__toggle" type="button">
@@ -16,7 +16,7 @@
     <div class="nav__wrapper">
       <ul class="nav__list menu-list">
         <li class="menu-list__item">
-          <a>Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="menu-list__item menu-list__item--current">
           <a href="catalog.html">Фото и видео</a>
@@ -32,15 +32,13 @@
   </nav>
 </header>
 <main class="main">
-  <h1 class="visually-hidden">Галерея</h1>
   <section class="welcome welcome--page">
     <div class="welcome__wrapper">
       <img src="img/sedona.svg" width="229" height="39" alt="Седона">
     </div>
     <div class="welcome__description">
       <h1 class="welcome__title">Фото и видео</h1>
-      <p class="media__overview">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
-        и экономике.</p>
+      <p class="welcome__overview">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
     </div>
   </section>
   <section class="photo">
@@ -57,7 +55,7 @@
           </div>
           <button class="photo__like" type="button">
             <span class="visually-hidden">Лайки</span>
-            <img src="img/like-icon.svg">
+            <img src="img/like-icon.svg" width="23" height="21" alt="Лайк">
             <span>1350</span>
           </button>
         </div>
@@ -73,7 +71,7 @@
           </div>
           <button class="photo__like" type="button">
             <span class="visually-hidden">Лайки</span>
-            <img src="img/like-icon.svg">
+            <img src="img/like-icon.svg" width="23" height="21" alt="Лайк">
             <span>143</span>
           </button>
         </div>
@@ -89,7 +87,7 @@
           </div>
           <button class="photo__like" type="button">
             <span class="visually-hidden">Лайки</span>
-            <img src="img/like-icon.svg">
+            <img src="img/like-icon.svg" width="23" height="21" alt="Лайк">
             <span>96</span>
           </button>
         </div>
@@ -105,7 +103,7 @@
           </div>
           <button class="photo__like" type="button">
             <span class="visually-hidden">Лайки</span>
-            <img src="img/like-icon.svg">
+            <img src="img/like-icon.svg" width="23" height="21" alt="Лайк">
             <span>254</span>
           </button>
         </div>
@@ -114,8 +112,7 @@
   </section>
   <section class="video">
     <h2 class="video__title">Все еще сомневаетесь?</h2>
-    <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-      раз!</p>
+    <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
     <div class="video__image">
       <img src="#" width="280" height="177" alt="Видеопрезентация">
       <a class="video__play" href="#">

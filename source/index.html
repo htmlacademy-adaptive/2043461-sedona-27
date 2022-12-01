@@ -13,22 +13,20 @@
     <button class="nav__toggle" type="button">
       <span class="visually-hidden">Открыть/закрыть меню</span>
     </button>
-    <div class="nav__wrapper">
-      <ul class="nav__list menu-list">
-        <li class="menu-list__item menu-list__item--current">
-          <a>Главная</a>
-        </li>
-        <li class="menu-list__item">
-          <a href="catalog.html">Фото и видео</a>
-        </li>
-        <li class="menu-list__item">
-          <a href="form.html">Форма отзыва</a>
-        </li>
-        <li class="menu-list__item">
-          <a href="https://htmlacademy.ru">HTML Academy</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="nav__list menu-list">
+      <li class="menu-list__item menu-list__item--current">
+        <a>Главная</a>
+      </li>
+      <li class="menu-list__item">
+        <a href="catalog.html">Фото и видео</a>
+      </li>
+      <li class="menu-list__item">
+        <a href="form.html">Форма отзыва</a>
+      </li>
+      <li class="menu-list__item">
+        <a href="https://htmlacademy.ru">HTML Academy</a>
+      </li>
+    </ul>
   </nav>
 </header>
 <main class="main">
@@ -57,21 +55,21 @@
             <img src="#" width="320" height="260" alt="Фотография города">
           </div>
         </div>
+        <ul class="reasons__attractions list-reset">
+          <li class="reasons__attractions-item reasons__attractions-item--motel">
+            <h3 class="reasons__title">Жильё</h3>
+            <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="reasons__attractions-item reasons__attractions-item--meal">
+            <h3 class="reasons__title">Еда</h3>
+            <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="reasons__attractions-item reasons__attractions-item--souvenirs">
+            <h3 class="reasons__title">Сувениры</h3>
+            <p class="reasons__description">Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
       </li>
-      <ul class="reasons__attractions list-reset">
-        <li class="reasons__attractions-item reasons__attractions-item--motel">
-          <h3 class="reasons__title">Жильё</h3>
-          <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li class="reasons__attractions-item reasons__attractions-item--meal">
-          <h3 class="reasons__title">Еда</h3>
-          <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li class="reasons__attractions-item reasons__attractions-item--souvenirs">
-          <h3 class="reasons__title">Сувениры</h3>
-          <p class="reasons__description">Не только китайского, но и местного производства!</p>
-        </li>
-      </ul>
       <li class="reasons__item reasons__item--full">
         <div class="reasons__wrapper reasons__wrapper--full">
           <div class="reasons__container">
@@ -110,12 +108,20 @@
   <section class="search">
     <div class="search__wrapper">
       <h2 class="search__title">Заинтересовались?</h2>
-      <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
-        седоне</p>
+      <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
       <a class="search__button button" href="#">Найти гостиницу</a>
     </div>
   </section>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104797.68915818392!2d-111.88985722108747!3d34.832908130959126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669736094105!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <section class="map">
+    <h2 class="visually-hidden">Карта Седоны</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104797.68915818392!2d-111.88985722108747!3d34.832908130959126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669736094105!5m2!1sru!2sru"></iframe>
+    <noscript>
+      <div class="map__img">
+        <img src="img/map.jpg" width="320" height="350" alt="Карта">
+      </div>
+    </noscript>
+  </section>
 </main>
 <footer class="footer">
   <div class="footer__wrapper">
