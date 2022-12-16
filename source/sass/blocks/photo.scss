@@ -1,0 +1,22 @@
+.photo__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 50px;
+}
+
+.photo__container {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+
+.photo__author {
+  font-weight: 400;
+}
+
+.photo__like {
+  background-color: #FFFFFF;
+  border: none;
+}

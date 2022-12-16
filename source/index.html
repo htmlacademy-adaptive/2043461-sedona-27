@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="header">
@@ -46,23 +47,32 @@
     <ul class="reasons__list list-reset">
       <li class="reasons__item reasons__item--full">
         <div class="reasons__wrapper reasons__wrapper--full">
-          <div class="reasons__container">
-            <h2 class="reasons__title">Настоящий городок</h2>
+          <div class="reasons__container--full">
+            <h3 class="reasons__title">Настоящий городок</h3>
             <p class="reasons__number">-№1-</p>
             <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="reasons__image">
-            <img src="#" width="320" height="260" alt="Фотография города">
+            <img src="img/photo-city@1x.jpg" width="320" height="260" alt="Фотография города">
           </div>
         </div>
         <ul class="reasons__attractions list-reset">
+          <li class="reasons__attractions-icon reasons__attractions-icon--motel">
+            <img src="img/icon-house.svg" width="40" height="40" alt="Иконка жилья">
+          </li>
           <li class="reasons__attractions-item reasons__attractions-item--motel">
             <h3 class="reasons__title">Жильё</h3>
             <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
+          <li class="reasons__attractions-icon reasons__attractions-icon--meal">
+            <img src="img/icon-burger.svg" width="40" height="40" alt="Бургер">
+          </li>
           <li class="reasons__attractions-item reasons__attractions-item--meal">
             <h3 class="reasons__title">Еда</h3>
             <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="reasons__attractions-icon reasons__attractions-icon--souvenirs">
+            <img src="img/icon-gift.svg" width="32" height="38" alt="Сувенир">
           </li>
           <li class="reasons__attractions-item reasons__attractions-item--souvenirs">
             <h3 class="reasons__title">Сувениры</h3>
@@ -72,13 +82,13 @@
       </li>
       <li class="reasons__item reasons__item--full">
         <div class="reasons__wrapper reasons__wrapper--full">
-          <div class="reasons__container">
+          <div class="reasons__container--full">
             <h3 class="reasons__title">Там есть мост Дьявола</h3>
             <p class="reasons__number">-№2-</p>
             <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <div class="reasons__img">
-            <img src="#" width="320" height="260" alt="Мост Дьявола">
+            <img src="img/photo-bridge@1x.jpg" width="320" height="260" alt="Мост Дьявола">
           </div>
         </div>
       </li>
@@ -114,13 +124,7 @@
   </section>
   <section class="map">
     <h2 class="visually-hidden">Карта Седоны</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104797.68915818392!2d-111.88985722108747!3d34.832908130959126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669736094105!5m2!1sru!2sru"></iframe>
-    <noscript>
-      <div class="map__img">
-        <img src="img/map.jpg" width="320" height="350" alt="Карта">
-      </div>
-    </noscript>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104797.68915818392!2d-111.88985722108747!3d34.832908130959126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669736094105!5m2!1sru!2sru"></iframe>
   </section>
 </main>
 <footer class="footer">

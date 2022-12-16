@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="header">
@@ -22,7 +23,7 @@
           <a href="catalog.html">Фото и видео</a>
         </li>
         <li class="menu-list__item menu-list__item--current">
-          <a href="form.html">Форма отзыва</a>
+          <a>Форма отзыва</a>
         </li>
         <li class="menu-list__item">
           <a href="https://htmlacademy.ru">HTML Academy</a>
@@ -102,18 +103,22 @@
           <ul class="form__options list-reset">
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="devil-bridge" value="Мост-дьявола" id="devil-bridge" checked>
+              <span class="form__options-mark"></span>
               <label class="form__options-label form__options-label--check" for="devil-bridge">Мост Дьявола</label>
             </li>
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="bell-mountain" value="Гора-колокол" id="bell-mountain" checked>
+              <span class="form__options-mark"></span>
               <label class="form__options-label form__options-label--check" for="bell-mountain">Гора-Колокол</label>
             </li>
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="slide-park" value="Слайд-парк" id="slide-park" checked>
+              <span class="form__options-mark"></span>
               <label class="form__options-label form__options-label--check" for="slide-park">Слайд-парк</label>
             </li>
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="red-rocks" value="Красные-скалы" id="red-rocks">
+              <span class="form__options-mark"></span>
               <label class="form__options-label form__options-label--check" for="red-rocks">Красные скалы</label>
             </li>
           </ul>
@@ -177,7 +182,7 @@
       <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
     </div>
     <div class="modal__wrapper-button">
-      <button class="modal__button button">Закрыть окно</button>
+      <button class="modal__button-success button">Закрыть окно</button>
     </div>
   </div>
 </section>
