@@ -36,7 +36,7 @@ img {
 .page {
   height: 100%;
   font-size: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   line-height: 26px;
   font-weight: 700;
 }
@@ -44,7 +44,7 @@ img {
 .page__body {
   min-height: 100%;
   margin: 0;
-  background-color: #FFFFFF;
-  color: #000000FF;
+  background-color: #ffffff;
+  color: #000000ff;
   width: 320px;
 }
