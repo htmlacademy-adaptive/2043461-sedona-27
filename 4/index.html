@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <base href="https://htmlacademy-adaptive.github.io/2043461-sedona-27/4/">
@@ -15,20 +15,22 @@
     <button class="nav__toggle" type="button">
       <span class="visually-hidden">Открыть/закрыть меню</span>
     </button>
-    <ul class="nav__list menu-list">
-      <li class="menu-list__item menu-list__item--current">
-        <a>Главная</a>
-      </li>
-      <li class="menu-list__item">
-        <a href="catalog.html">Фото и видео</a>
-      </li>
-      <li class="menu-list__item">
-        <a href="form.html">Форма отзыва</a>
-      </li>
-      <li class="menu-list__item">
-        <a href="https://htmlacademy.ru">HTML Academy</a>
-      </li>
-    </ul>
+    <div class="nav--opened">
+      <ul class="nav__list menu-list">
+        <li class="menu-list__item menu-list__item--current">
+          <a>Главная</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </header>
 <main class="main">
@@ -48,34 +50,28 @@
     <ul class="reasons__list list-reset">
       <li class="reasons__item reasons__item--full">
         <div class="reasons__wrapper reasons__wrapper--full">
-          <div class="reasons__container--full">
+          <div class="reasons__container">
             <h3 class="reasons__title">Настоящий городок</h3>
             <p class="reasons__number">-№1-</p>
             <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="reasons__image">
-            <img src="img/photo-city@1x.jpg" width="320" height="260" alt="Фотография города">
+            <img src="img/photo-city.jpg" width="320" height="260" alt="Фотография города">
           </div>
         </div>
         <ul class="reasons__attractions list-reset">
-          <li class="reasons__attractions-icon reasons__attractions-icon--motel">
-            <img src="img/icon-house.svg" width="40" height="40" alt="Иконка жилья">
-          </li>
           <li class="reasons__attractions-item reasons__attractions-item--motel">
+            <img src="img/icon-house.svg" width="40" height="40" alt="Иконка жилья">
             <h3 class="reasons__title">Жильё</h3>
             <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="reasons__attractions-icon reasons__attractions-icon--meal">
-            <img src="img/icon-burger.svg" width="40" height="40" alt="Бургер">
-          </li>
           <li class="reasons__attractions-item reasons__attractions-item--meal">
+            <img src="img/icon-burger.svg" width="40" height="40" alt="Бургер">
             <h3 class="reasons__title">Еда</h3>
             <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="reasons__attractions-icon reasons__attractions-icon--souvenirs">
-            <img src="img/icon-gift.svg" width="32" height="38" alt="Сувенир">
-          </li>
           <li class="reasons__attractions-item reasons__attractions-item--souvenirs">
+            <img src="img/icon-gift.svg" width="32" height="38" alt="Сувенир">
             <h3 class="reasons__title">Сувениры</h3>
             <p class="reasons__description">Не только китайского, но и местного производства!</p>
           </li>
@@ -83,13 +79,13 @@
       </li>
       <li class="reasons__item reasons__item--full">
         <div class="reasons__wrapper reasons__wrapper--full">
-          <div class="reasons__container--full">
+          <div class="reasons__container">
             <h3 class="reasons__title">Там есть мост Дьявола</h3>
             <p class="reasons__number">-№2-</p>
             <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <div class="reasons__img">
-            <img src="img/photo-bridge@1x.jpg" width="320" height="260" alt="Мост Дьявола">
+            <img src="img/photo-bridge.jpg" width="320" height="260" alt="Мост Дьявола">
           </div>
         </div>
       </li>
@@ -129,8 +125,7 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="footer__wrapper">
-    <a class="footer__hashtag" href="#">#VISITSEDONA</a>
+  <a class="footer__hashtag" href="#">#VISITSEDONA</a>
     <ul class="footer__social social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -155,7 +150,6 @@
       <span class="copyright__text">Разработано</span>
       <img src="img/htmlacademy-black.svg" width="26" height="34" alt="htmlacademy">
     </a>
-  </div>
 </footer>
 </body>
 </html>
