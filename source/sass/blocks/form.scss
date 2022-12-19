@@ -1,23 +1,13 @@
-.forms {
-  display: grid;
-  grid-template-columns: 320px;
-}
-
 .form__fieldset {
   border-right: none;
   border-left: none;
   border-bottom: none;
   border-color: #e5e5e5;
-}
-
-.form__contact-list {
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .form__contact-item {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 16px;
 }
 
@@ -25,33 +15,19 @@
   font-size: 14px;
   font-weight: 400;
 }
-
 .form__contact-input {
   font-weight: 700;
   background-color: #f2f2f2;
   border: none;
-  padding-top: 16px;
   padding-left: 16px;
-  padding-bottom: 16px;
 }
 
 .form__fieldset-title {
   font-size: 18px;
 }
 
-.form__options {
-  list-style-type: none;
-}
-
-.form__options-mark {
-  width: 46px;
-  height: 46px;
-  border: none;
-  background-color: #f2f2f2;
-}
-
 .form__feedback {
-  width: 279px;
+  width: 100%;
   height: 150px;
   background-color: #f2f2f2;
   padding: 16px;
@@ -60,19 +36,12 @@
 }
 
 .form__submit {
-  width: 280px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: #81b3d2;
-  border: none;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 21px;
+  width: 100%;
+  padding: 19px 16px 13px;
 }
 
 .form__note {
-  display: flex;
+  display: block;
   font-weight: 400;
   font-size: 12px;
   margin-bottom: 24px;

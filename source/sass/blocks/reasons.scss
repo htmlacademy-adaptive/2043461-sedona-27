@@ -5,30 +5,22 @@
   line-height: 21px;
 }
 
-.reasons__container--full {
+.reasons__item--full .reasons__container {
   background-color: #81b3d2;
   color: #ffffff;
   padding: 37px 18px;
-  display: grid;
 }
 
 .reasons__container {
-  display: flex;
-  flex-direction: column;
   background-color: #d6d6d6;
-}
-
-.reasons__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.reasons__attractions {
-  list-style-type: none;
 }
 
 .reasons__attractions-icon {
   display: grid;
   padding: 0;
+}
+
+.reasons__wrapper .reasons__container {
+  padding: 21px 20px 35px;
+  background-color: #81b3d2;
 }

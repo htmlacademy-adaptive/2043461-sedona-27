@@ -1,0 +1,22 @@
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  width: 156px;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+.social__item {
+  list-style: none;
+}
+
+.social__link {
+  background-color: #81b3d2;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

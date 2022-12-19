@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -36,7 +36,7 @@
   <h1 class="visually-hidden">Отзыв</h1>
   <section class="welcome welcome--page">
     <div class="welcome__wrapper">
-      <img src="img/sedona.svg" width="229" height="39" alt="Седона">
+      <img class="welcome__mountains" src="img/sedona.svg" width="229" height="39" alt="Седона">
     </div>
     <div class="welcome__description">
       <h2 class="welcome__title">Оставьте свой отзыв</h2>
@@ -45,7 +45,7 @@
   </section>
   <section class="form">
     <h2 class="visually-hidden">Список форм</h2>
-    <form class="forms" action="https://echo.htmlacademy.ru" method="post">
+    <form action="https://echo.htmlacademy.ru" method="post">
       <div class="form__wrapper-fieldset">
         <fieldset class="form__fieldset form__fieldset--data">
           <h2 class="form__fieldset-title">Представьтесь:</h2>
@@ -103,22 +103,18 @@
           <ul class="form__options list-reset">
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="devil-bridge" value="Мост-дьявола" id="devil-bridge" checked>
-              <span class="form__options-mark"></span>
               <label class="form__options-label form__options-label--check" for="devil-bridge">Мост Дьявола</label>
             </li>
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="bell-mountain" value="Гора-колокол" id="bell-mountain" checked>
-              <span class="form__options-mark"></span>
               <label class="form__options-label form__options-label--check" for="bell-mountain">Гора-Колокол</label>
             </li>
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="slide-park" value="Слайд-парк" id="slide-park" checked>
-              <span class="form__options-mark"></span>
               <label class="form__options-label form__options-label--check" for="slide-park">Слайд-парк</label>
             </li>
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="red-rocks" value="Красные-скалы" id="red-rocks">
-              <span class="form__options-mark"></span>
               <label class="form__options-label form__options-label--check" for="red-rocks">Красные скалы</label>
             </li>
           </ul>
@@ -138,8 +134,7 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="footer__wrapper">
-    <a class="footer__hashtag" href="#">#VISITSEDONA</a>
+  <a class="footer__hashtag" href="#">#VISITSEDONA</a>
     <ul class="footer__social social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -164,7 +159,6 @@
       <span class="copyright__text">Разработано</span>
       <img src="img/htmlacademy-black.svg" width="26" height="34" alt="htmlacademy">
     </a>
-  </div>
 </footer>
 <section class="modal">
   <div class="modal__container modal__container-error">
@@ -182,7 +176,7 @@
       <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
     </div>
     <div class="modal__wrapper-button">
-      <button class="modal__button-success button">Закрыть окно</button>
+      <button class="modal__button button">Закрыть окно</button>
     </div>
   </div>
 </section>
