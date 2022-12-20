@@ -1,9 +1,12 @@
 .nav__logo {
   position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
   display: block;
   width: 185px;
   height: 96px;
-  left: 67px;
+  transform: translateX(-50%);
 }
 
 .nav__list {
@@ -14,4 +17,8 @@
   right: 0;
   background-color: #81b3d2;
   color: #ffffff;
+}
+
+.nav--opened .nav__list {
+  display: block;
 }

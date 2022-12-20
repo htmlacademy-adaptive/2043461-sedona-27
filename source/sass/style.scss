@@ -1,15 +1,27 @@
-@import "blocks/global";
+@import "global/global";
+@import "global/utils";
+@import "blocks/header";
 @import "blocks/nav";
+@import "blocks/menu-list";
 @import "blocks/welcome";
 @import "blocks/reasons";
 @import "blocks/search";
-@import "blocks/footer";
 @import "blocks/photo";
 @import "blocks/video";
 @import "blocks/form";
-@import "blocks/modal";
+@import "blocks/footer";
 @import "blocks/social";
 @import "blocks/copyright";
-@import "blocks/utils";
-@import "blocks/menu";
-@import "blocks/header";
+@import "blocks/modal";
+
+
+
+
+
+
+
+
+
+
+
+
