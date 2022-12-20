@@ -1,0 +1,27 @@
+.welcome__wrapper {
+  background-image: url("../img/mountins.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome__mountains {
+  display: block;
+  margin: 0 auto;
+}
+
+.welcome__description {
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+.welcome__title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.welcome__overview {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}

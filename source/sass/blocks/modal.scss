@@ -1,0 +1,24 @@
+.modal__title {
+  font-size: 21px;
+}
+
+.modal__text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.modal__button {
+  width: 180px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.modal__container-success .modal__button {
+  width: 280px;
+}
+
+.modal__wrapper-text {
+  padding: 25px 42px 51px;
+  text-align: center;
+  text-transform: uppercase;
+}

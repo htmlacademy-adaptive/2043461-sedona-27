@@ -1,0 +1,43 @@
+.reasons__number,
+.reasons__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.reasons__container {
+  background-color: #d6d6d6;
+}
+
+.reasons__item--full .reasons__container {
+  color: #ffffff;
+  padding: 37px 18px;
+}
+
+.reasons__attractions-icon {
+  display: grid;
+  padding: 0;
+}
+
+.reasons__attractions-item--motel {
+  background-image: url("../../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+}
+
+.reasons__attractions-item--meal {
+  background-image: url("../../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: 40px 35px;
+}
+
+.reasons__attractions-item--souvenirs {
+  background-image: url("../../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 38px;
+}
+
+.reasons__wrapper .reasons__container {
+  padding: 21px 20px 35px;
+  background-color: #81b3d2;
+}

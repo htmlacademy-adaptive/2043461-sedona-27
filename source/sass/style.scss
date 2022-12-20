@@ -1,1 +1,15 @@
-// Начните писать стили здесь
+@import "global/global";
+@import "global/utils";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/menu-list";
+@import "blocks/welcome";
+@import "blocks/reasons";
+@import "blocks/search";
+@import "blocks/photo";
+@import "blocks/video";
+@import "blocks/form";
+@import "blocks/footer";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/modal";
