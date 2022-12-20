@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <base href="https://htmlacademy-adaptive.github.io/2043461-sedona-27/4/">
@@ -15,22 +16,20 @@
     <button class="nav__toggle" type="button">
       <span class="visually-hidden">Открыть/закрыть меню</span>
     </button>
-    <div class="nav--opened">
-      <ul class="nav__list menu-list">
-        <li class="menu-list__item menu-list__item--current">
-          <a>Главная</a>
-        </li>
-        <li class="menu-list__item">
-          <a href="catalog.html">Фото и видео</a>
-        </li>
-        <li class="menu-list__item">
-          <a href="form.html">Форма отзыва</a>
-        </li>
-        <li class="menu-list__item">
-          <a href="https://htmlacademy.ru">HTML Academy</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="nav__list menu-list list-reset">
+      <li class="menu-list__item menu-list__item--current">
+        <a>Главная</a>
+      </li>
+      <li class="menu-list__item">
+        <a href="catalog.html">Фото и видео</a>
+      </li>
+      <li class="menu-list__item">
+        <a href="form.html">Форма отзыва</a>
+      </li>
+      <li class="menu-list__item">
+        <a href="https://htmlacademy.ru">HTML Academy</a>
+      </li>
+    </ul>
   </nav>
 </header>
 <main class="main">
@@ -61,17 +60,14 @@
         </div>
         <ul class="reasons__attractions list-reset">
           <li class="reasons__attractions-item reasons__attractions-item--motel">
-            <img src="img/icon-house.svg" width="40" height="40" alt="Иконка жилья">
             <h3 class="reasons__title">Жильё</h3>
             <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="reasons__attractions-item reasons__attractions-item--meal">
-            <img src="img/icon-burger.svg" width="40" height="40" alt="Бургер">
             <h3 class="reasons__title">Еда</h3>
             <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="reasons__attractions-item reasons__attractions-item--souvenirs">
-            <img src="img/icon-gift.svg" width="32" height="38" alt="Сувенир">
             <h3 class="reasons__title">Сувениры</h3>
             <p class="reasons__description">Не только китайского, но и местного производства!</p>
           </li>
@@ -126,7 +122,7 @@
 </main>
 <footer class="footer">
   <a class="footer__hashtag" href="#">#VISITSEDONA</a>
-    <ul class="footer__social social">
+    <ul class="footer__social social list-reset">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Вконтакте</span>
