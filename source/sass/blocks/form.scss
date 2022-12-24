@@ -1,9 +1,12 @@
+@import "../global/variables";
+
 .form__fieldset {
   position: relative;
   margin: 0;
   padding: 24px 20px 26px;
   border: none;
   border-bottom: 1px solid #d6d6d6;
+  text-align: center;
 }
 
 .form__contact-item {
@@ -45,4 +48,26 @@
   font-weight: 400;
   font-size: 12px;
   margin-bottom: 24px;
+}
+
+.form__contact--info {
+  @media (min-width:$tablet-width) {
+    display: flex;
+    width: 648px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 960px;
+  }
+}
+
+.form__options {
+  @media (min-width:$tablet-width) {
+    display: grid;
+    grid-template-columns: 224px 224px;
+  }
+  @media (min-width:$desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

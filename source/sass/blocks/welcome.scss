@@ -1,8 +1,10 @@
+@import "../global/variables";
+
 .welcome__wrapper {
   background-image: url("../img/mountins.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
+  }
 
 .welcome__mountains {
   display: block;

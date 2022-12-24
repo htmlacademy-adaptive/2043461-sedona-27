@@ -1,3 +1,16 @@
+@import "../global/variables";
+
+.photo {
+  margin: 0 auto;
+  @media(min-width:$tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width:$desktop-width){
+    width: 1200px;
+  }
+}
+
 .photo__container {
   font-size: 14px;
   line-height: 21px;
@@ -11,4 +24,29 @@
 .photo__like {
   background-color: transparent;
   border: none;
+}
+
+.photo__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
+}
+
+.photo__item--first {
+  @media(min-width:$tablet-width) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  @media (min-width:$desktop-width) {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
 }

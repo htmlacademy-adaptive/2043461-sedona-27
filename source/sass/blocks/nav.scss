@@ -1,3 +1,5 @@
+@import "../global/variables";
+
 .nav__logo {
   position: absolute;
   top: 0;
@@ -17,8 +19,21 @@
   right: 0;
   background-color: #81b3d2;
   color: #ffffff;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .nav--opened .nav__list {
   display: block;
+}
+
+.nav__toggle {
+  display: none;
 }
