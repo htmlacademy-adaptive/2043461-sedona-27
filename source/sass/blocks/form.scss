@@ -51,22 +51,23 @@
 }
 
 .form__contact--info {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     width: 648px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 960px;
   }
 }
 
 .form__options {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 224px 224px;
   }
-  @media (min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }

@@ -10,17 +10,17 @@
 .reasons__container {
   background-color: #d6d6d6;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     flex-basis: 256px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     flex-basis: 400px;
   }
 }
 
 .reasons__item--full .reasons__container {
-    padding: 37px 18px;
+  padding: 37px 18px;
 }
 
 .reasons__attractions-icon {
@@ -76,11 +76,12 @@
   justify-content: space-between;
   text-align: center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 256px);
   }
-  @media(min-width:$desktop-width) {
+
+  @media(min-width: $desktop-width) {
     grid-template-columns: repeat(3, 400px);
   }
 }
