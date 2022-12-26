@@ -1,87 +1,266 @@
-@import "../global/variables";
+.reasons {
+  position: relative;
+}
 
-.reasons__number,
-.reasons__description {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
+.reasons__item {
+  position: relative;
+}
+
+.reasons__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.reasons__item--full:nth-child(2n) .reasons__wrapper {
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 .reasons__container {
-  background-color: #d6d6d6;
+  padding: 8px 35px 24px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #eeeeee;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-height: 256px;
+    padding: 22px 30px 22px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 400px;
+    padding: 25px 40px 25px;
   }
 }
 
-.reasons__item--full .reasons__container {
-  padding: 37px 18px;
+.reasons__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.reasons__attractions-icon {
-  display: grid;
-  padding: 0;
+.reasons__item--full {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
 }
 
-.reasons__attractions-item--motel {
-  background-image: url("../../img/icon-house.svg");
+.reasons__item--full:first-child .reasons__container {
+  padding-top: 55px;
+  padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 38px 56px 35px;
+  }
+}
+
+.reasons__item--full:first-child .reasons__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 36px;
+  background-image: url("../img/svg/reasons-triangle.svg");
   background-repeat: no-repeat;
-  background-size: 39px 37px;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.reasons__attractions-item--meal {
-  background-image: url("../../img/icon-burger.svg");
-  background-repeat: no-repeat;
-  background-size: 40px 35px;
+.reasons__title {
+  margin-bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 11px;
+    padding: 0 20px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 175px;
+    margin: 0 auto 12px;
+    padding: 0 10px;
+  }
 }
 
-.reasons__attractions-item--souvenirs {
-  background-image: url("../../img/icon-gift.svg");
-  background-repeat: no-repeat;
-  background-size: 32px 38px;
+.reasons__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.reasons__description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.reasons___number {
+  font-weight: 700;
+}
+
+.reasons__container p + p {
+  margin-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
+  }
 }
 
 .reasons__wrapper .reasons__container {
   padding: 21px 20px 35px;
   background-color: #81b3d2;
-  color: #ffffff;
-}
 
-.reasons__wrapper {
   @media (min-width: $tablet-width) {
-    display: flex;
+    padding: 21px 30px 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 83px 35px;
   }
 }
 
-.reasons__wrapper--reverse {
+.reasons__wrapper .reasons__title {
+  color: #ffffff;
+}
+
+.reasons__wrapper p {
+  color: #ffffff;
+}
+
+.reasons__image {
+  width: 100%;
+  height: 260px;
+
   @media (min-width: $tablet-width) {
-    flex-direction: row-reverse;
+    height: 256px;
+  }
+}
+
+.reasons__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.reasons__attractions {
+  padding-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding-bottom: 0;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .reasons__attractions-item {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    flex: 256px;
-  }
-}
-
-.reasons__attractions {
-  justify-content: space-between;
-  text-align: center;
+  padding: 15px 15px 0 65px;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-position: 18px 23px;
+  background-size: 40px 40px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 256px);
+    min-height: 331px;
+    padding: 157px 33px 60px;
+    text-align: center;
+    background-position: center 61px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(3, 400px);
+    padding: 170px 55px 60px;
+    background-position: center 70px;
   }
+}
+
+.reasons__attractions-item .reasons__title {
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+}
+
+.reasons__attractions-item--motel {
+  background-image: url("../img/icon-house.svg");
+
+  @media (min-width: $tablet-width) {
+    background-size: 77px 72px;
+  }
+}
+
+.reasons__attractions-item--meal {
+  background-image: url("../img/icon-burger.svg");
+
+  @media (min-width: $tablet-width) {
+    background-size: 80px 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 72px 72px;
+  }
+}
+
+.reasons__attractions-item--souvenirs {
+  background-image: url("../img/icon-gift.svg");
+
+  @media (min-width: $tablet-width) {
+    background-size: 85px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 93px 77px;
+  }
+}
+
+.reasons__attractions-item--souvenirs br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.reasons__item--full:nth-child(2n) .reasons__image {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.reasons__item:not(.reasons__item--full)::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 1px;
+  background-color: #d6d6d6;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.reasons__item:last-child::after {
+  display: none;
 }
