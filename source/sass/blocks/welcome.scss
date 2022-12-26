@@ -2,6 +2,14 @@
   background-image: url("../img/mountins.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/mountins-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/mountins-desktop.jpg");
+  }
 }
 
 .welcome__mountains {

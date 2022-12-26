@@ -1,8 +1,29 @@
-.photo__container {
-  font-size: 14px;
-  line-height: 21px;
+.photo {
+  @media (min-width: $tablet-width) {
+    padding: 46px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 0;
+  }
 }
 
+.photo__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
 
 .photo__author {
   font-weight: 400;
@@ -11,4 +32,56 @@
 .photo__like {
   background-color: transparent;
   border: none;
+}
+
+.photo__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.photo__item:first-child {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.photo__image {
+  display: block;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    height: 267px;
+  }
+}
+
+.photo__item {
+  position: relative;
+}
+
+.photo__item:first-child .photo__image {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.photo__image image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.photo__item:nth-child(3n) .photo__container {
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }

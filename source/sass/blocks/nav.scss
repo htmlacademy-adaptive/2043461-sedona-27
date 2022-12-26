@@ -10,15 +10,26 @@
 }
 
 .nav__list {
-  display: none;
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
   background-color: #81b3d2;
-  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    background-color: #ffffff;
+  }
 }
 
 .nav--opened .nav__list {
   display: block;
+}
+
+.nav__toggle {
+  display: none;
 }

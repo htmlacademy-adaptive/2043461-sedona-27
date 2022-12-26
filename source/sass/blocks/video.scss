@@ -1,3 +1,18 @@
+.video {
+  text-align: center;
+  padding: 1px 20px 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 60px 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 14px;
+    padding-bottom: 92px;
+  }
+}
+
 .video__title {
   font-size: 18px;
 }
