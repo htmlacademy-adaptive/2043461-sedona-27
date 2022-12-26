@@ -49,14 +49,9 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
   }
-
-  @media (min-width: $desktop-width) {
-    grid-column: span 3;
-    grid-row: span 3;
-  }
 }
 
-.photo__img {
+.photo__image {
   display: block;
   height: 280px;
 
@@ -65,13 +60,17 @@
   }
 }
 
-.photo__item:first-child .photo__img {
+.photo__item {
+  position: relative;
+}
+
+.photo__item:first-child .photo__image {
   @media (min-width: $tablet-width) {
     height: 400px;
   }
 }
 
-.photo__img img {
+.photo__image image {
   display: block;
   width: 100%;
   height: 100%;

@@ -10,14 +10,19 @@
 }
 
 .nav__list {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-  }
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+  background-color: #81b3d2;
 
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-    margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    background-color: #ffffff;
   }
 }
 
