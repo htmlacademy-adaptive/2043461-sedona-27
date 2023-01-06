@@ -5,6 +5,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 11px 60px 48px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,10 +17,21 @@
 
 .video__title {
   font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .video__description {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
