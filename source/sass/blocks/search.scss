@@ -3,7 +3,7 @@
 }
 
 .search__title {
-  font-size: 21px;
+  font-size: 30px;
   line-height: 26px;
 }
 
@@ -12,4 +12,26 @@
   line-height: 21px;
   font-weight: 400;
   margin-bottom: 32px;
+}
+
+.search__wrapper {
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 435px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.search__button {
+  width: 284px;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin-bottom: 66px;
+  }
 }

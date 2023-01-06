@@ -2,12 +2,18 @@
   background-image: url("../img/mountins.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 90px;
 
   @media (min-width: $tablet-width) {
+    height: 518px;
+    padding: 77px 154px 91px 153px;
     background-image: url("../img/mountins-tablet.jpg");
+    background-position: 50% 0;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 78px 370px 90px;
+    text-align: center;
     background-image: url("../img/mountins-desktop.jpg");
   }
 }
@@ -15,16 +21,33 @@
 .welcome__mountains {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }
 
 .welcome__description {
   padding-right: 18px;
   padding-left: 18px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 520px;
+  }
 }
 
 .welcome__title {
   font-weight: 700;
   font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .welcome__overview {
@@ -32,4 +55,14 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+}
+
+.welcome__wrapper--page {
+  padding-top: 52px;
+  padding-bottom: 67px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 95px 154px 117px 157px;
+  }
 }
