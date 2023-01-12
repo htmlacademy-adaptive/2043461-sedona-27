@@ -31,18 +31,28 @@
 .form__feedback {
   width: 100%;
   height: 150px;
+  padding: 15px 12px 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: inherit;
+  color: #000000;
+  border: 4px solid transparent;
   background-color: #f2f2f2;
-  padding: 16px;
-  border: none;
-  margin-bottom: 56px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
-    width: 648px;
-    margin-left: 60px;
+    height: 160px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 768px;
+    display: block;
+    width: 770px;
+    height: 160px;
+    margin: 0 auto;
+  }
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 

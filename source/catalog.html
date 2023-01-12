@@ -35,8 +35,8 @@
 </header>
 <main class="main">
   <section class="welcome welcome--page">
-    <div class="welcome__wrapper welcome__wrapper--page">
-      <img class="welcome__sedona" src="img/sedona.svg" width="229" height="39" alt="Седона">
+    <div class="welcome__wrapper">
+      <img src="img/sedona.svg" width="229" height="39" alt="Седона">
     </div>
     <div class="welcome__description">
       <h1 class="welcome__title">Фото и видео</h1>
@@ -48,7 +48,11 @@
     <ol class="photo__list list-reset">
       <li class="photo__item">
         <div class="photo__image">
-          <img src="img/space.jpg" width="280" height="280" alt="Неродные просторы">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/space-desktop@1x.jpg 1x, img/space-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/space-tablet@1x.jpg 1x, img/space-tablet@2x.jpg 2x">
+            <img src="img/space.jpg" srcset="img/space-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+          </picture>
         </div>
         <div class="photo__container">
           <div class="photo__description">
@@ -64,7 +68,10 @@
       </li>
       <li class="photo__item">
         <div class="photo__img">
-          <img src="img/flora.jpg" width="280" height="280" alt="Местная растительность">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/flora-desktop@1x.jpg 1x, img/flora-desktop@2x.jpg 2x">
+            <img src="img/flora.jpg" srcset="img/flora-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
+          </picture>
         </div>
         <div class="photo__container">
           <div class="photo__description">
@@ -80,7 +87,10 @@
       </li>
       <li class="photo__item">
         <div class="photo__image">
-          <img src="img/road.jpg" width="280" height="280" alt="Дорога на север">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/road-desktop@1x.jpg 1x, img/road-desktop@2x.jpg 2x">
+            <img src="img/road.jpg" srcset="img/road-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
+          </picture>
         </div>
         <div class="photo__container">
           <div class="photo__description">
@@ -116,7 +126,10 @@
     <h2 class="video__title">Все еще сомневаетесь?</h2>
     <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
     <div class="video__image">
-      <img src="img/video.jpg" width="280" height="177" alt="Видеопрезентация">
+      <picture>
+        <source media="(min-width:768px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+        <img src="img/video.jpg" srcset="img/road-mobile@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация">
+      </picture>
       <a class="video__play" href="#">
         <span class="visually-hidden">Play</span>
       </a>
