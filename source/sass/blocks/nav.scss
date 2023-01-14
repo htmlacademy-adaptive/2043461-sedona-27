@@ -10,14 +10,6 @@
 }
 
 .nav__list {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 5;
-  display: none;
-  background-color: #81b3d2;
-
   @media (min-width: $tablet-width) {
     position: static;
     display: grid;
@@ -33,7 +25,7 @@
 .nav__toggle {
   display: block;
   position: absolute;
-  right: 17px;
+  right: 20px;
   top: 17px;
   z-index: 6;
   width: 23px;
@@ -46,43 +38,44 @@
   }
 }
 
+.nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow: 0 9px #81b3d2, 0 18px #81b3d2;
+}
+
+.nav__toggle:hover::before {
+  background-color: rgba(129, 179, 210, 0.3);
+  box-shadow: 0 9px rgba(129, 179, 210, 0.3), 0 18px rgba(129, 179, 210, 0.3);
+}
+
+.nav__toggle:active::before {
+  background-color: rgba(129, 179, 210, 0.6);
+  box-shadow: 0 9px rgba(129, 179, 210, 0.6), 0 18px rgba(129, 179, 210, 0.6);
+}
+
 .nav--opened .nav__toggle {
   &::before,
   &::after {
     content: "";
     position: absolute;
     right: 0;
-    width: 31px;
+    width: 26px;
     height: 4px;
     background-color: #ffffff;
   }
 
   &::before {
+    top: 11px;
     transform: rotate(45deg);
   }
 
   &::after {
     transform: rotate(-45deg);
   }
-}
-
-.nav--closed .nav__toggle::before {
-  content: "";
-  position: absolute;
-  background-color: #81b3d2;
-  top: 0;
-  right: 0;
-  height: 4px;
-  width: 23px;
-  box-shadow: 0 9px #81b3d2, 0 18px #81b3d2;
-}
-
-.nav--closed .nav__toggle:hover::before {
-  background-color: fade-out(#81b3d2, 0.3);
-  box-shadow: 0 9px fade-out(#81b3d2, 0.3), 0 18px fade-out(#81b3d2, 0.3);
-}
-
-.nav--closed .nav__toggle:active::before {
-  background-color: fade-out(#81b3d2, 0.6);
-  box-shadow: 0 9px fade-out(#81b3d2, 0.6), 0 18px fade-out(#81b3d2, 0.6);
 }
