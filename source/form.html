@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page__body">
+<body class="body no-js">
 <header class="header">
   <nav class="nav">
     <a class="nav__logo" href="index.html">
@@ -35,20 +35,19 @@
 </header>
 <main class="main">
   <h1 class="visually-hidden">Отзыв</h1>
-  <section class="welcome welcome--page">
+  <section class="welcome welcome--page welcome--form">
     <div class="welcome__wrapper">
       <img src="img/sedona.svg" width="229" height="39" alt="Седона">
     </div>
     <div class="welcome__description">
       <h2 class="welcome__title">Оставьте свой отзыв</h2>
-      <p class="welcome__overview">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="welcome__overview">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
     </div>
   </section>
   <section class="form">
-    <h2 class="visually-hidden">Список форм</h2>
+    <h2 class="visually-hidden">Форма обратной свзяи</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <div class="form__wrapper-fieldset">
-        <div class="form__contact-info">
           <fieldset class="form__fieldset form__fieldset--data">
             <h2 class="form__fieldset-title">Представьтесь:</h2>
             <ul class="form__contact-list list-reset">
@@ -132,41 +131,48 @@
           <button class="form__submit button" type="submit">Отправить отзыв</button>
           <span class="form__note">* — обязательные поля</span>
         </fieldset>
-      </div>
     </form>
   </section>
 </main>
-<footer class="footer">
+<footer class="footer footer--page footer--form">
   <a class="footer__hashtag" href="#">#VISITSEDONA</a>
     <ul class="footer__social social list-reset">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Вконтакте</span>
-          <img src="img/vk.svg" width="24" height="24" alt="vk">
+          <svg width="24" height="24" role="img" aria-label="Мы в контакте.">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
           <span class="visually-hidden">Телеграм</span>
-          <img src="img/telegram.svg" width="24" height="24" alt="telegram">
+          <svg width="24" height="24" role="img" aria-label="Мы в телеграм.">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">Ютуб</span>
-          <img src="img/youtube.svg" width="24" height="24" alt="youtube">
+          <svg width="24" height="24" role="img" aria-label="Мы на YouTybe.">
+            <use xlink:href="img/sprite.svg#youtube"></use>
+          </svg>
         </a>
       </li>
     </ul>
     <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="copyright__text">Разработано</span>
-      <img src="img/htmlacademy-black.svg" width="26" height="34" alt="htmlacademy">
+      <svg width="27" height="35" role="img" aria-label="Htmlacademy">
+        <use xlink:href="img/sprite.svg#htmlacademy"></use>
+      </svg>
     </a>
 </footer>
 <section class="modal">
   <div class="modal__container modal__container-error">
     <div class="modal__wrapper-text">
-      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     </div>
     <div class="modal__wrapper-button">
@@ -176,12 +182,13 @@
   <div class="modal__container modal__container-success">
     <div class="modal__wrapper-text">
       <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
     </div>
     <div class="modal__wrapper-button">
       <button class="modal__button button">Закрыть окно</button>
     </div>
   </div>
 </section>
+<script src="js/script.js"></script>
 </body>
 </html>
