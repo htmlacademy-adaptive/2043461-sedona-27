@@ -1,9 +1,18 @@
 .social {
   display: flex;
   justify-content: center;
-  margin: 0 0 40px;
-  list-style: none;
-  padding: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-left: 11px;
+  }
+}
+
+.footer--page .social {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .social__item:not(:last-child) {
@@ -18,4 +27,18 @@
   height: 48px;
   color: #ffffff;
   background-color: #81b3d2;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.social__link:active svg {
+  opacity: 0.3;
 }

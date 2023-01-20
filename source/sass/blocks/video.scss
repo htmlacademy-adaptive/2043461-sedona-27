@@ -1,21 +1,21 @@
 .video {
+  padding: 17px 20px 0;
+
   text-align: center;
-  padding: 1px 20px 0;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 60px 48px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 12px 60px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 14px;
-    padding-bottom: 92px;
+    padding-top: 17px;
+    padding-bottom: 44px;
   }
 }
 
 .video__title {
+  margin: 0 0 28px;
   font-size: 18px;
 
   @media (min-width: $tablet-width) {
@@ -25,14 +25,18 @@
 }
 
 .video__description {
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 38px;
+  margin: 0 0 38px;
+  padding: 0 5px;
+  font-size: 14px;
+  line-height: 21px;
 
   @media (min-width: $tablet-width) {
-    width: 445px;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 460px;
+    margin: 0 auto 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 88px;
   }
 }
 
@@ -59,10 +63,11 @@
 .video__play {
   position: absolute;
   top: 50%;
-  left: 53%;
+  left: 50%;
   width: 48px;
   height: 54px;
   color: #ffffff;
+
   background-color: transparent;
   background-image: url("../img/play-video.svg");
   background-repeat: no-repeat;
@@ -70,7 +75,12 @@
   transform: translate(-50%, -50%);
   opacity: 0.7;
 
-  @media (min-width: 768px) {
-    left: 50%;
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
