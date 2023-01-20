@@ -35,7 +35,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 40px 25px;
+    padding: 48px 40px 25px;
   }
 }
 
@@ -53,11 +53,12 @@
 }
 
 .reasons__item--full:first-child .reasons__container {
-  padding-top: 55px;
-  padding-bottom: 39px;
+  padding-top: 53px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 42px;
+    padding-top: 55px;
+    padding-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,12 +73,19 @@
   right: 0;
   left: 0;
   height: 36px;
+  background-image: url("../img/advantages-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.reasons__item:nth-child(2n):not(.reasons__item--full) .reasons__container {
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
   }
 }
 
@@ -131,7 +139,7 @@
   background-color: #81b3d2;
 
   @media (min-width: $tablet-width) {
-    padding: 21px 30px 21px;
+    padding: 41px 30px 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -167,8 +175,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    padding-bottom: 0;
     grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 0;
   }
 }
 
@@ -224,7 +232,7 @@
   background-image: url("../img/icon-gift.svg");
 
   @media (min-width: $tablet-width) {
-    background-size: 85px 80px;
+    background-size: 69px 78px;
   }
 
   @media (min-width: $desktop-width) {

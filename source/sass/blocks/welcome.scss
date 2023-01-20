@@ -1,12 +1,12 @@
 .welcome__wrapper {
   position: relative;
-  background-image: url("../img/mountins.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   padding-top: 90px;
   padding-bottom: 85px;
   background-color: #8ea8c5;
+  background-image: url("../img/mountins.jpg");
+  background-repeat: no-repeat;
   background-position: bottom;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     padding-top: 76px;
@@ -15,7 +15,6 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/mountins@2x.jpg");
-    background-size: 1338px auto;
   }
 
   &::after {
@@ -32,6 +31,24 @@
     @media (min-width: $desktop-width) {
       bottom: -1px;
     }
+  }
+}
+
+.welcome--page .welcome__wrapper {
+  padding-top: 52px;
+  padding-bottom: 67px;
+  background-size: 282%;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 117px;
+    background-size: 156%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 102px;
+    padding-bottom: 121px;
+    background-size: cover;
   }
 }
 
@@ -52,39 +69,32 @@
 }
 
 .welcome--page .welcome__description {
-  padding: 27px 20px 36px;
-
+  padding: 24px 20px 36px;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
-    padding: 48px 165px 33px;
-
+    padding: 42px 20px 34px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 80px 128px 41px;
+    padding: 75px 20px 41px;
   }
 }
 
 .welcome--form .welcome__description {
-  padding-bottom: 30px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 46px;
-    padding-bottom: 28px;
-  }
+  padding-bottom: 28px;
 
   @media (min-width: $desktop-width) {
-    padding-top: 95px;
+    padding-top: 90px;
   }
 }
 
 .welcome__title {
+  margin-bottom: 36px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 36px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -95,11 +105,18 @@
 }
 
 .welcome__overview {
-  text-transform: uppercase;
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  margin: 0;
+  text-transform: uppercase;
+}
+
+.welcome--page .welcome__overview {
+  @media (min-width: $tablet-width) {
+    max-width: 445px;
+    margin: 0 auto;
+  }
 }
 
 .welcome__wrapper img {

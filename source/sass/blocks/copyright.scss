@@ -8,6 +8,10 @@
   color: #000000;
   text-decoration: none;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 16px;
+  }
+
   &:hover,
   &:focus {
     color: #81b3d2;
@@ -26,4 +30,11 @@
 
 .copyright__text {
   margin-right: 12px;
+}
+
+.footer--page .copyright {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    padding-left: 9px;
+  }
 }

@@ -1,11 +1,58 @@
 .footer {
-  padding-top: 29px;
+  padding: 42px 20px 22px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 60px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 38px 120px 34px;
+  }
+}
+
+.footer--page {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+  }
+}
+
+.footer--form {
+  padding-top: 33px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
+  }
 }
 
 .footer__hashtag {
-  text-align: center;
+  display: inline-block;
+  margin-bottom: 31px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
   color: #000000;
   text-decoration: none;
-  margin-bottom: 34px;
-  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
