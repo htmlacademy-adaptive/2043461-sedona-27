@@ -8,23 +8,6 @@
   }
 }
 
-.photo__container {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f2f2f2;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-}
-
 .photo__list {
   @media (min-width: $tablet-width) {
     display: grid;
@@ -88,9 +71,7 @@
 }
 
 .photo__container {
-  padding: 15px 0 12px;
-
-  @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
