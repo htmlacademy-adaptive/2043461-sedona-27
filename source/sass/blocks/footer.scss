@@ -56,3 +56,16 @@
     opacity: 0.3;
   }
 }
+
+.footer--page .copyright {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    padding-left: 9px;
+  }
+}
+
+.footer--page .social {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,21 @@
+.no-js .nav__toggle {
+  display: none;
+}
+
+.no-js .nav__list {
+  position: relative;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: grid;
+  }
+}
+
+.no-js iframe {
+  display: none;
+}
+
+.no-js .map__img {
+  display: block;
+}

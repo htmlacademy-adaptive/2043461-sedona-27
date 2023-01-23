@@ -23,9 +23,9 @@
   left: 0;
   height: 7px;
   background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.2) 100%
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
   );
 
   @media (min-width: $tablet-width) {
@@ -86,4 +86,20 @@
 
 .menu-list__item--current a {
   color: #766357;
+}
+
+.menu-list__item a[href] {
+  &:hover,
+  &:focus {
+    color: #766357;
+    outline: none;
+
+    @media (min-width: $tablet-width) {
+      color: #81b3d2;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

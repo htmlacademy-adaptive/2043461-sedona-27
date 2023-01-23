@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="body no-js">
-<header class="header">
-  <nav class="nav">
-    <a class="nav__logo" href="index.html">
-      <img class="nav__logo-image" src="img/logotype.svg" width="185" height="96" alt="Городок Седона">
-    </a>
-    <button class="nav__toggle" type="button">
-      <span class="visually-hidden">Открыть/закрыть меню</span>
-    </button>
-    <div class="nav__wrapper">
-      <ul class="nav__list menu-list list-reset">
-        <li class="menu-list__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="menu-list__item">
-          <a href="catalog.html">Фото и видео</a>
-        </li>
-        <li class="menu-list__item menu-list__item--current">
-          <a>Форма отзыва</a>
-        </li>
-        <li class="menu-list__item">
-          <a href="https://htmlacademy.ru">HTML Academy</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-<main class="main">
-  <h1 class="visually-hidden">Отзыв</h1>
-  <section class="welcome welcome--page welcome--form">
-    <div class="welcome__wrapper">
-      <img src="img/sedona.svg" width="229" height="39" alt="Седона">
-    </div>
-    <div class="welcome__description">
-      <h2 class="welcome__title">Оставьте свой отзыв</h2>
-      <p class="welcome__overview">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
-    </div>
-  </section>
-  <section class="form">
-    <h2 class="visually-hidden">Форма обратной свзяи</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <div class="form__wrapper-fieldset">
+  <header class="header">
+    <nav class="nav">
+      <a class="nav__logo" href="index.html">
+        <img class="nav__logo-image" src="img/logotype.svg" width="185" height="96" alt="Городок Седона">
+      </a>
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
+      <div class="nav__wrapper">
+        <ul class="nav__list menu-list list-reset">
+          <li class="menu-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="menu-list__item menu-list__item--current">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Отзыв</h1>
+    <section class="welcome welcome--page welcome--form">
+      <div class="welcome__wrapper">
+        <img src="img/sedona.svg" width="229" height="39" alt="Седона">
+      </div>
+      <div class="welcome__description">
+        <h2 class="welcome__title">Оставьте свой отзыв</h2>
+        <p class="welcome__overview">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях.</p>
+      </div>
+    </section>
+    <section class="form">
+      <h2 class="visually-hidden">Форма обратной свзяи</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__wrapper-fieldset">
           <fieldset class="form__fieldset form__fieldset--data">
             <h2 class="form__fieldset-title">Представьтесь:</h2>
             <ul class="form__contact-list list-reset">
@@ -131,11 +139,11 @@
           <button class="form__submit button" type="submit">Отправить отзыв</button>
           <span class="form__note">* — обязательные поля</span>
         </fieldset>
-    </form>
-  </section>
-</main>
-<footer class="footer footer--page footer--form">
-  <a class="footer__hashtag" href="#">#VISITSEDONA</a>
+      </form>
+    </section>
+  </main>
+  <footer class="footer footer--page footer--form">
+    <a class="footer__hashtag" href="#">#VISITSEDONA</a>
     <ul class="footer__social social list-reset">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -168,27 +176,32 @@
         <use xlink:href="img/sprite.svg#htmlacademy"></use>
       </svg>
     </a>
-</footer>
-<section class="modal">
-  <div class="modal__container modal__container-error">
-    <div class="modal__wrapper-text">
-      <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
-      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  </footer>
+
+  <!-- Класс modal--opened modal--open-success открывают модальное окно об успешной откправке -->
+  <!-- Класс modal--opened modal--open-error открывают модальное окно об ошибке -->
+  <section class="modal">
+    <div class="modal__container modal__container-error">
+      <div class="modal__wrapper-text">
+        <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="modal__wrapper-button">
+        <button class="modal__button button">Оk</button>
+      </div>
     </div>
-    <div class="modal__wrapper-button">
-      <button class="modal__button button">Оk</button>
+    <div class="modal__container modal__container-success">
+      <div class="modal__wrapper-text">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__wrapper-button">
+        <button class="modal__button button">Закрыть окно</button>
+      </div>
     </div>
-  </div>
-  <div class="modal__container modal__container-success">
-    <div class="modal__wrapper-text">
-      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
-    </div>
-    <div class="modal__wrapper-button">
-      <button class="modal__button button">Закрыть окно</button>
-    </div>
-  </div>
-</section>
-<script src="js/script.js"></script>
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>

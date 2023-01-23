@@ -9,12 +9,6 @@
   }
 }
 
-.footer--page .social {
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
-  }
-}
-
 .social__item:not(:last-child) {
   margin-right: 6px;
 }
