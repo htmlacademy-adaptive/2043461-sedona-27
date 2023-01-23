@@ -2,7 +2,6 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   font-size: 14px;
   line-height: 21px;
   color: #000000;
@@ -15,7 +14,6 @@
   &:hover,
   &:focus {
     color: #81b3d2;
-
     outline: none;
   }
 
@@ -25,16 +23,10 @@
 }
 
 .copyright svg {
+  flex-shrink: 0;
   fill: currentColor;
 }
 
 .copyright__text {
   margin-right: 12px;
-}
-
-.footer--page .copyright {
-  @media (min-width: $tablet-width) {
-    margin-right: 0;
-    padding-left: 9px;
-  }
 }
