@@ -236,7 +236,6 @@
   left: 0;
   width: 46px;
   height: 46px;
-
   background-color: #f2f2f2;
   border-radius: 4px;
 }
@@ -257,9 +256,8 @@
 .form__options-label::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 15px;
   left: 14px;
-  transform: translateY(-50%);
 }
 
 .form__options-input:checked + .form__options-label--radio::after {
