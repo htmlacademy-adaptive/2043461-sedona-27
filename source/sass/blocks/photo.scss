@@ -71,7 +71,9 @@
 }
 
 .photo__container {
-    @media (min-width: $tablet-width) {
+  padding: 15px 0 12px;
+
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
